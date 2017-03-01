@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">ResumeBuilder</string>
+    <string name="title">Resume\nBuilder</string>
+    <string name="facebook_app_id">428899797453461</string>
+    <string name="fb_login_protocol_scheme">428899797453461</string>
+    <string name="de_authorize_app">deaouth</string>
+    <string name="welcome">welcome</string>
+    <string-array name="planets_array">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="action_websearch">Web search</string>
+    <string name="app_not_available">Sorry, there\'s no web browser available</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+
+</resources>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/loginpage"
+                android:weightSum="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="45dp"
+        android:textColor="#ffff"
+        android:typeface="serif"
+        android:textSize="50dp"
+        android:gravity="right"
+        android:text="@string/title"
+        android:id="@+id/textView"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:layout_marginLeft="45dp"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignTop="@+id/textView"
+        android:id="@+id/imageView"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="87dp"
+        android:weightSum="1"
+        android:layout_below="@+id/textView">
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/sign_in_button"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_height="wrap_content"/>
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="3dp"
+            android:paddingTop="13dp"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:paddingBottom="13dp"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/deauth"
+        android:layout_width="182dip"
+        android:layout_height="wrap_content"
+        android:text="@string/de_authorize_app"
+        android:layout_marginRight="5dp"
+        android:layout_marginEnd="5dp"
+        android:textSize="12sp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_name"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="jjfjfj"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="44dp"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>
