@@ -23,6 +23,7 @@ import java.util.HashMap;
 public class Main2Activity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+    private static final String TAG = Main2Activity.class.getName();
     private SessionManager session;
     private TextView username;
     private TextView Emailid;
@@ -87,6 +88,7 @@ public class Main2Activity extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            session.logoutUser();
             return true;
         }
 
@@ -99,9 +101,10 @@ public class Main2Activity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
+        if (id == R.id.nav_profile) {
+
             // Handle the camera action
-        } else if (id == R.id.nac_about) {
+        } else if (id == R.id.nav_about) {
 
         }
 
@@ -124,6 +127,7 @@ public class Main2Activity extends AppCompatActivity
 
         Emailid.setText(email);
         String photouri = user.get(SessionManager.KEY_PHOTO);
+//         Log.d(TAG,photouri);
         Glide
                 .with(this)
                 .load(photouri)

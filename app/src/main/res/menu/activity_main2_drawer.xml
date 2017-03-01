@@ -3,11 +3,11 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
+            android:id="@+id/nav_profile"
             android:icon="@drawable/user"
             android:title="profile"/>
         <item
-            android:id="@+id/nac_about"
+            android:id="@+id/nav_about"
             android:icon="@drawable/about"
             android:title="About"/>
     </group>
